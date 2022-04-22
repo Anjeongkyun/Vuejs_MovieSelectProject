@@ -1,26 +1,14 @@
 <template>
-  <h1 @click = "increase">{{count}}</h1>
-    <div v-if= "count > 4">
-        4보다 큽니다.
-    </div>
+  <RouterView />
 </template>
 
 <script>
 
-export default {
-  data() {
-    return {
-      count : 0
-    }
-  },
-  methods: {
-    increase() {
-      this.count += 1
-    }
-  }
-}
+// export default {
+
+//   }
 </script>
 
-<style>
-
+<style lang ="scss">
+@import "./scss/main";
 </style>
