@@ -31,11 +31,11 @@ export default{
                     href: '/'
                 },
                 {
-                    name: 'MyMovie',
+                    name: 'Movie',
                     href: '/movie'
                 },
                 {
-                    name : 'MyAbout',
+                    name : 'About',
                     href : '/about'
                 }
             ]
