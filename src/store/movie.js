@@ -1,4 +1,5 @@
 import axios from 'axios'
+import _uniqBy from 'lodash/uniqBy'
 
 export default {
     // module
@@ -40,7 +41,7 @@ export default {
             const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=1`)
             const { Search, totalResults} = res.data
             commit('updateState', {
-                movies: Search
+                movies: _uniqBy(Search, 'imdbID')
             })
             console.log(res.data);
             console.log(totalResults);
@@ -57,7 +58,9 @@ export default {
                     const res = await axios.get(`https://www.omdbapi.com/?apikey=${OMDB_API_KEY}&s=${title}&type=${type}&y=${year}&page=${page}`)                    
                     const { Search } = res.data
                     commit('updateState', {
-                        movies: [...state.movies, ...Search] //전개 연산자?
+                        movies: [
+                            ...state.movies, 
+                            ..._uniqBy(Search,'imdbID')] //전개 연산자?
                     })
                 }
             }
