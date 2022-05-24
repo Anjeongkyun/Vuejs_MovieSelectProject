@@ -1,21 +1,6 @@
 # Vue3 Movie app
 
 Vue3와 OMDb API를 사용하는 영화 검색 애플리케이션입니다.<br>
-[vue3-webpack-template#vue-router](https://github.com/ParkYoungWoong/vue3-webpack-template)에서 프로젝트를 시작합니다.
-
-[Nuxt](https://nuxtjs.org/docs/2.x/get-started/installation) 프로젝트로 이관할 용도의 [Vue2 Movie App](https://github.com/ParkYoungWoong/vue2-movie-app) 프로젝트도 확인하세요!
-
-[DEMO](https://stupefied-hodgkin-d9d350.netlify.app/)
-
-## 🌿 Branches
-
-진행 순서에 맞는 브랜치를 확인하세요.
-
-- [Master](https://github.com/ParkYoungWoong/vue3-movie-app)
-- [Default](https://github.com/ParkYoungWoong/vue3-movie-app/tree/default)
-- [Netlify CLI](https://github.com/ParkYoungWoong/vue3-movie-app/tree/netlify-cli)
-- [Unit Test](https://github.com/ParkYoungWoong/vue3-movie-app/tree/unit-test)
-- [E2E Test](https://github.com/ParkYoungWoong/vue3-movie-app/tree/e2e-test)
 
 ## 📖 Docs
 
@@ -58,10 +43,6 @@ Vue3와 OMDb API를 사용하는 영화 검색 애플리케이션입니다.<br>
 
 ## 📦 Packages
 
-> 설치할 각 패키지(모듈)의 설치 버전이 예제와 다른 경우 사용법이 달라질 수 있습니다.<br>
-> 모든 패키지를 완성 예제의 [package.json](https://github.com/ParkYoungWoong/vue3-movie-app/blob/master/package.json) 파일에 명시된 버전과 동일하게 설치하는 것을 권장합니다.<br>
-> [유뷰트에서 '강의 예제와 모듈(패키지) 버전 일치시키기' 영상 강의 보기](https://www.youtube.com/watch?v=5L9Ugz9eYxI)
-
 - [bootstrap](https://github.com/twbs/bootstrap): 다양하고 강력한 기능을 제공하는 UI 프레임워크입니다.
 - [vuex](https://github.com/vuejs/vuex): Vue.js를 위한 중앙 집중식 상태 관리 라이브러리입니다.
 - [vue-router](https://github.com/vuejs/vue-router-next): Vue.js SPA를 위한 공식 라우터입니다.
@@ -76,20 +57,11 @@ Vue3와 OMDb API를 사용하는 영화 검색 애플리케이션입니다.<br>
 - [cypress](https://github.com/cypress-io/cypress): 브라우저 기반으로 쉽고 빠르게 테스트할 수 있는 프론트엔드 전용 테스트 도구입니다.
 - [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress): Cypress 테스트 환경을 위한 ESLint 플러그인입니다.
 
-### 패키지 설치 주의사항
-
-Vue 3버전에 대응하는 플러그인들과 최신의 부트스트랩 5버전 패키지를 설치하세요!
-
-- `npm i bootstrap@next`
-- `npm i vuex@next`
-- `npm i vue-router@4`
-- `npm i @vue/test-utils@next`
-- `npm i vue-jest@next`
 
 ## 🔧 단위 테스트(Unit test)
 
 단위(Unit) 테스트란 데이터(상태), 함수(메소드), 컴포넌트 등의 정의된 프로그램 최소 단위들이 독립적으로 정상 동작하는지 확인하는 것을 말합니다.<br>
-이를 통해 프로그램 전체의 신뢰도를 향상하고 코드 리팩터링(Code refactoring)의 부담을 줄일 수 있습니다.
+이를 통해 프로그램 전체의 신뢰도를 향상하고 코드 리팩터링(Code refactoring)의 부담을 줄였습니다.
 
 ### 구성
 
