@@ -1,24 +1,30 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import MyHome from './MyHome'
-import MyMovie from './MyMovie'
-import MyAbout from './MyAbout'
+import Home from './Home'
+import Movie from './Movie'
+import About from './About'
+import NotFound from './NotFound'
 
 export default createRouter({
-    // Hash or History
-    history: createWebHashHistory(),
-    // pages
-    routes: [
-        {
-            path: '/',
-            component: MyHome 
-        },
-        {
-            path: '/movie',
-            component: MyMovie 
-        },
-        {
-            path: '/about',
-            component : MyAbout
-        }
-    ]
+  history: createWebHashHistory(),
+  scrollBehavior() {
+    return { top: 0 }
+  },
+  routes: [
+    {
+      path: '/',
+      component: Home
+    },
+    {
+      path: '/movie/:id',
+      component: Movie
+    },
+    {
+      path: '/about',
+      component: About
+    },
+    {
+      path: '/:notFound(.*)',
+      component: NotFound
+    }
+  ]
 })

@@ -1,9 +1,11 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './routes/index.js'
-import store from './store/index.js'
+import App from './App'
+import store from './store'  // Same as './store/index.js'
+import router from './routes' // Same as './routes/index.js'
+import loadImage from './plugins/loadImage'
 
 createApp(App)
-    .use(router) // use : 플러그인 연결
-    .use(store)
-    .mount('#app')
+  .use(store)
+  .use(router)
+  .use(loadImage)
+  .mount('#app')

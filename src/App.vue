@@ -1,18 +1,17 @@
 <template>
-  <MyHeader />
+  <Header />
   <RouterView />
+  <Footer />
 </template>
 
 <script>
-import MyHeader from './components/MyHeader.vue'
+import Header from '~/components/Header'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
-    MyHeader
-    }
+    Header,
+    Footer
+  }
 }
 </script>
-
-<style lang ="scss">
-@import "./scss/main";
-</style>
