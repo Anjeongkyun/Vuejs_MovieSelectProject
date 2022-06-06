@@ -40,29 +40,7 @@ Vue3와 OMDb API를 사용하는 영화 검색 애플리케이션입니다.<br>
   - Jest
   - Vue Test Utils
   - Cypress
-
-## 📦 Packages
-
-- [bootstrap](https://github.com/twbs/bootstrap): 다양하고 강력한 기능을 제공하는 UI 프레임워크입니다.
-- [vuex](https://github.com/vuejs/vuex): Vue.js를 위한 중앙 집중식 상태 관리 라이브러리입니다.
-- [vue-router](https://github.com/vuejs/vue-router-next): Vue.js SPA를 위한 공식 라우터입니다.
-- [axios](https://github.com/axios/axios):  HTTP 클라이언트 라이브러리로, OMDb API를 통해 영화 정보를 요청하기 위해 사용합니다.
-- [lodash](https://github.com/lodash/lodash): 다양한 유틸리티 기능을 제공하는 자바스크립트 라이브러리입니다.
-- [netlify-cli](https://www.npmjs.com/package/netlify-cli): Netlify 명령을 사용해 로컬에서 프로젝트와 서버리스 함수가 통신하기 위해 사용합니다.
-- [dotenv-webpack](https://www.npmjs.com/package/dotenv-webpack): Webpack에서 dotenv로 환경 변수를 설정합니다. 
-- [jest](https://github.com/facebook/jest): 페이스북에서 만든 테스트 프레임워크로 VTU(Vue Test Utils)에서 권장하는 테스트 러너(실행 환경)입니다.
-- [@vue/test-utils](https://github.com/vuejs/vue-test-utils-next): Vue.js 환경에서 단위 테스트를 하기 위한 공식(Official) 라이브러리 입니다.
-- [vue-jest](https://github.com/vuejs/vue-test-utils-next): Vue 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일합니다.
-- [babel-jest](https://github.com/babel/babel-jest): JS 파일을 Jest가 실행할 수 있는 자바스크립트로 컴파일합니다.
-- [cypress](https://github.com/cypress-io/cypress): 브라우저 기반으로 쉽고 빠르게 테스트할 수 있는 프론트엔드 전용 테스트 도구입니다.
-- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress): Cypress 테스트 환경을 위한 ESLint 플러그인입니다.
-
-
-## 🔧 단위 테스트(Unit test)
-
-단위(Unit) 테스트란 데이터(상태), 함수(메소드), 컴포넌트 등의 정의된 프로그램 최소 단위들이 독립적으로 정상 동작하는지 확인하는 것을 말합니다.<br>
-이를 통해 프로그램 전체의 신뢰도를 향상하고 코드 리팩터링(Code refactoring)의 부담을 줄였습니다.
-
+   
 ### 구성
 
 `jest.config.js` 파일을 생성하고 다음과 같이 Jest 구성 옵션을 추가합니다.
@@ -115,12 +93,6 @@ module.exports = {
   // ...
 }
 ```
-
-## 🔧 E2E 테스트(End to End test)
-
-E2E(End to End) 테스트란 애플리케이션의 처음부터 끝까지의 흐름을 테스트하는 방법입니다.<br>
-실제 사용자의 관점에서 테스트를 진행하며, 브라우저, 네트워크, DB 등 실제 환경을 최대한 그대로 활용해 진행합니다.<br>
-사용자 환경과 거의 동일하게 테스트를 진행하기 때문에 실제 상황에서 발생할 수 있는 여러 에러를 사전에 발견할 수 있습니다.
 
 ### 폴더 구조
 
